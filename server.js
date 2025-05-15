@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // MongoDB Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/videos', {
+mongoose.connect('mongodb+srv://aniketroy:multiplication_server@cluster0.wd5jkso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0/videos', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
